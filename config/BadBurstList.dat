@@ -1,0 +1,26 @@
+# Bad burst list for the PNN (K+ -> pi+ nu nu) analysis
+# Format: one burst ID per line, optional trailing comment after '#'
+#
+# Maintained by V. Marchetti (victor.marchetti@cern.ch). Please do not edit
+# without discussing with the PNN analysis group -- every exclusion below
+# is tied to a logged detector or beam issue, see the run elog for details.
+#
+# Revision history:
+#   2023-04-11  V. Marchetti   initial list, 2016-2022 data-taking
+#   2024-05-14  S. Weiss       added 2023 run period
+#   2025-01-20  V. Marchetti   added 2024 run period, cross-checked against elog
+
+156    # KTAG radiator pressure trip, elog #4471
+289    # GTK3 high occupancy (beam halo), elog #4483
+412    # SPS spill structure unstable, intensity flag
+733    # LKr HV trip on cell group C12, elog #4522
+1042   # STRAW chamber 2 HV ramp, partial run
+1198   # CEDAR desync w.r.t. GTK, elog #4560
+1567   # Beam intensity > nominal by 40%, saturation regime
+1834   # MUV3 DAQ busy fraction out of range
+2210   # GTK1 noisy pixel column, masked post-hoc
+2389   # RICH mirror alignment drift, elog #4601
+2701   # LKr readout desync (missing SL), elog #4618
+3015   # SPS extraction jitter, timing outlier burst
+3348   # KTAG occupancy anomaly, elog #4649
+3690   # STRAW HV trip chamber 4, partial recovery
