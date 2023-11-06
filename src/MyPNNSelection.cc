@@ -41,7 +41,7 @@ MyPNNSelection::MyPNNSelection(Core::BaseAnalysis *ba) : Analyzer(ba, "MyPNNSele
   // ---- track quality -----------------------------------------------------
   AddParam("MinTrackMomentum", &fMinTrackMomentum, 15000.);  // MeV/c
   AddParam("MaxTrackMomentum", &fMaxTrackMomentum, 45000.);  // MeV/c
-  AddParam("MaxTrackChi2", &fMaxTrackChi2, 20.);
+  AddParam("MaxTrackChi2", &fMaxTrackChi2, 18.);  // tightened after 2023 STRAW alignment update
 
   // ---- vertex quality ------------------------------------------------
   AddParam("ZVertexMin", &fZVertexMin, 105000.);  // mm
@@ -49,7 +49,7 @@ MyPNNSelection::MyPNNSelection(Core::BaseAnalysis *ba) : Analyzer(ba, "MyPNNSele
   AddParam("MaxCDA", &fMaxCDA, 30.);              // mm
 
   // ---- particle identification ----------------------------------------
-  AddParam("MinRICHLikelihoodPion", &fMinRICHLikelihoodPion, 0.85);
+  AddParam("MinRICHLikelihoodPion", &fMinRICHLikelihoodPion, 0.90);  // raised after RICH mirror recalibration
   AddParam("MaxEoP", &fMaxEoP, 0.85);
   AddParam("RequireMUV3NoAssociation", &fRequireMUV3NoAssociation, true);
 
