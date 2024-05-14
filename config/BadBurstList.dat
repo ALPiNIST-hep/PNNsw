@@ -24,3 +24,9 @@
 3015   # SPS extraction jitter, timing outlier burst
 3348   # KTAG occupancy anomaly, elog #4649
 3690   # STRAW HV trip chamber 4, partial recovery
+
+# --- 2023 run period (added 2024-05-14, S. Weiss) ---
+4021   # GTK2 HV trip, elog #4702
+4288   # SPS slow extraction ripple, timing outlier burst
+4593   # LKr readout desync (missing SL), elog #4739
+4877   # CEDAR gas pressure drift out of spec
