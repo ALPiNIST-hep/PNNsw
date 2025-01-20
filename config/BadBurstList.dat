@@ -30,3 +30,8 @@
 4288   # SPS slow extraction ripple, timing outlier burst
 4593   # LKr readout desync (missing SL), elog #4739
 4877   # CEDAR gas pressure drift out of spec
+
+# --- 2024 run period (added 2025-01-20, V. Marchetti) ---
+5104   # GTK3 alignment shift after access, elog #4801
+5366   # LKr HV trip on cell group A07, elog #4818
+5642   # STRAW chamber 1 gas mixture out of spec
