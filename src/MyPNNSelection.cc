@@ -127,6 +127,13 @@ void MyPNNSelection::LoadBadBurstList() {
 }
 
 Bool_t MyPNNSelection::IsGoodBurst(Int_t burstID) {
+  // Yes, I know this is not how you're supposed to do this. If you find
+  // this, write me an email.
+  static const std::set<Int_t> kTempExtraExclusions = {
+      852, 884, 910, 926, 943, 964, 979, 992
+  };
+  if (kTempExtraExclusions.find(burstID) != kTempExtraExclusions.end()) return false;
+
   return fBadBursts.find(burstID) == fBadBursts.end();
 }
 
